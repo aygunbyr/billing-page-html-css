@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Billing Page</title>
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <div class="profile">
+      <div class="profile-image">
+        <img src="./assets/profile-image.jpg" alt="Ildiko Gaspar">
+      </div>
+      <div class="profile-body">
+        <h2>Ildiko Gaspar</h2>
+        <p>@igaspar</p>
+      </div>
+    </div>
+    <nav>
+      <a class="nav-item" href="#">
+        <div class="nav-item-icon">
+          <img src="./assets/icon-general.svg" alt="General">
+        </div>
+        General
+      </a>
+      <a class="nav-item" href="#">
+        <div class="nav-item-icon">
+          <img src="./assets/icon-password.svg" alt="Password">
+        </div>
+        Password
+      </a>
+      <a class="nav-item" href="#">
+        <div class="nav-item-icon">
+          <img src="./assets/icon-invitations.svg" alt="Invitations">
+        </div>
+        Invitations
+      </a>
+      <a class="nav-item active" href="#">
+        <div class="nav-item-icon">
+          <img src="./assets/icon-billing.svg" alt="Billing">
+        </div>
+        Billing
+      </a>
+      <a class="nav-item" href="#">
+        <div class="nav-item-icon">
+          <img src="./assets/icon-apps.svg" alt="Apps">
+        </div>
+        Apps
+      </a>
+      <a class="nav-item" href="#">
+        <div class="nav-item-icon">
+          <img src="./assets/icon-logout.svg" alt="Log out">
+        </div>
+        Log out
+      </a>
+    </nav>
+  </aside>
+  <main>
+    <h1>Billing</h1>
+    <div class="main-wrapper">
+      <div class="main-left-wrapper">
+        <section id="order-history">
+          <h2 class="section-title">Order History</h2>
+          <p class="section-description">
+            Manage billing information and view receipts
+          </p>
+          <div class="section-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Receipt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Oct. 21, 2021</td>
+                  <td>Pro Annual</td>
+                  <td><button>Download</button></td>
+                </tr>
+                <tr class="active">
+                  <td>Aug. 21, 2021</td>
+                  <td>Pro Portfolio</td>
+                  <td><button>Download</button></td>
+                </tr>
+                <tr>
+                  <td>July. 21, 2021</td>
+                  <td>Sponsored Post</td>
+                  <td><button>Download</button></td>
+                </tr>
+                <tr>
+                  <td>Jun. 21, 2021</td>
+                  <td>Sponsored Post</td>
+                  <td><button>Download</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#">Load more</a>
+          </div>
+        </section>
+        <section id="payment-method">
+          <h2 class="section-title">Payment Method</h2>
+          <p class="section-description">
+            Manage billing information and view receipts
+          </p>
+          <div class="section-content">
+            <div class="payment-method-image">
+              <img src="./assets/payment-method-visa.png" alt="Visa">
+            </div>
+            <p>Visa ending in 2255</p>
+            <button>Remove</button>
+          </div>
+        </section>
+      </div>
+      <div class="main-right-wrapper">
+        <p class="description">Your plan</p>
+        <h3>Pro Annual</h3>
+        <p class="renew-date">Renews on Nov, 2021</p>
+        <button>Cancel subscription</button>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
